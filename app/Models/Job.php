@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Job extends Model
+{
+    use HasFactory;
+
+    protected $fillable = ["title", "description", "image", "skills", "location", "recruiter_id"];
+    protected $primaryKey = 'job_id';
+}
